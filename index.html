@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Business Loan Assistance | Mr. Manoj Kumar</title>
+    <title>Business Loan Assistance in Bareilly | Mr. Manoj Kumar</title>
 
     <meta name="description"
-          content="Business loan assistance by Mr. Manoj Kumar serving Bareilly and nearby areas.">
+          content="Business loan assistance in Bareilly and nearby areas by Mr. Manoj Kumar. Get guidance for business expansion, working capital and business financing.">
 
     <style>
-        * {
+     * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -20,10 +20,71 @@
         }
 
         body {
-            background: #f6f8fc;
-            color: #172033;
-            line-height: 1.6;
-        }
+    background: #050b14;
+    color: #f1f5f9;
+    line-height: 1.6;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Animated background */
+body::before {
+    content: "";
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
+    background:
+        radial-gradient(circle at 20% 30%, rgba(0, 140, 255, 0.20), transparent 25%),
+        radial-gradient(circle at 80% 60%, rgba(0, 70, 255, 0.18), transparent 25%),
+        radial-gradient(circle at 50% 90%, rgba(0, 200, 255, 0.12), transparent 25%);
+    animation: backgroundMove 15s ease-in-out infinite alternate;
+}
+.facebook-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #1877f2;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.facebook-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.facebook-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: white;
+    color: #1877f2;
+    border-radius: 50%;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+@keyframes backgroundMove {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    50% {
+        transform: translate(5%, -3%) scale(1.05);
+    }
+    100% {
+        transform: translate(-4%, 5%) scale(1.08);
+    }
+}
 
         /* NAVBAR */
         nav {
@@ -65,7 +126,7 @@
             padding: 90px 7%;
             display: flex;
             align-items: center;
-            background: linear-gradient(120deg, #eaf2ff, #ffffff);
+            background:transparent;
         }
 
         .hero-content {
@@ -378,7 +439,10 @@
                href="tel:918439492978">
                 📞 Call Now
             </a>
-
+ <a href="https://www.facebook.com/share/1C9iZ6wGGK/" target="_blank" class="facebook-btn">
+    <span class="facebook-icon">f</span>
+    Visit us on Facebook
+</a>
         </div>
 
     </div>
@@ -531,6 +595,7 @@
                 Bareilly, Uttar Pradesh
             </p>
 
+           
         </div>
 
 
