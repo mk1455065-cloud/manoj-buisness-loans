@@ -42,6 +42,35 @@ body::before {
         radial-gradient(circle at 50% 90%, rgba(0, 200, 255, 0.12), transparent 25%);
     animation: backgroundMove 15s ease-in-out infinite alternate;
 }
+    .whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: bold;
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.35);
+    transition: 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-btn i {
+    font-size: 24px;
+}
+
+
+.arrow {
+    font-size: 21px;
+    margin-left: 3px;
+}
 .facebook-btn {
     display: inline-flex;
     align-items: center;
@@ -389,6 +418,7 @@ body::before {
             }
         }
     </style>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">   
 </head>
 
 <body>
@@ -430,9 +460,11 @@ body::before {
 
         <div class="buttons">
 
-            <a class="btn primary" href="#contact">
-                Get in Touch
-            </a>
+            <a href="#" class="whatsapp-btn" onclick="openWhatsApp()">
+    <i class="fa-brands fa-whatsapp"></i>
+    WhatsApp
+    <span class="arrow">→</span>
+</a>
 
             <!-- REPLACE THE NUMBER BELOW -->
             <a class="btn secondary"
@@ -742,7 +774,17 @@ Message: ${message}`;
 }
 
 </script>
+<script>
+function openWhatsApp() {
+    const number = "8439492978";
 
+    const message = "Hello Mr. Manoj Kumar, I am interested in a business loan. I would like to know more details.";
+
+    const url = "https://wa.me/" + number + "?text=" + encodeURIComponent(message);
+
+    window.open(url, "_blank");
+}
+</script>
 </body>
 </html>
 ```
