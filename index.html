@@ -10,6 +10,9 @@
     <meta name="description"
           content="Business loan assistance in Bareilly and nearby areas by Mr. Manoj Kumar. Get guidance for business expansion, working capital and business financing.">
 
+          .contact-info h3 {
+    color: #172033;
+}
     <style>
      * {
             margin: 0;
@@ -418,7 +421,7 @@ body::before {
             }
         }
     </style>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">   
+ <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
@@ -599,21 +602,17 @@ body::before {
 
 </section>
 
-
 <!-- CONTACT -->
 <section id="contact">
 
     <div class="section-title">
-
         <h2>Let's Discuss Your Requirement</h2>
 
         <p>
-            Submit your details and get in touch regarding your
-            business financing requirement.
+            Have a business financing requirement?
+            Get in touch with Mr. Manoj Kumar for assistance.
         </p>
-
     </div>
-
 
     <div class="contact-container">
 
@@ -625,62 +624,24 @@ body::before {
                 Business Loan Assistance<br>
                 Satin Finserv Limited<br>
                 Bareilly, Uttar Pradesh
+        
             </p>
 
-           
+            <div class="contact-buttons">
+
+                <a href="#" class="whatsapp-btn" onclick="openWhatsApp()">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp
+                    <span class="arrow">→</span>
+                </a>
+
+                <a href="tel:8439492978" class="call-btn">
+                    📞 Call Now
+                </a>
+
+            </div>
+
         </div>
-
-
-        <form onsubmit="sendEnquiry(event)">
-
-            <input
-                type="text"
-                id="name"
-                placeholder="Your Name"
-                required
-            >
-
-            <input
-                type="tel"
-                id="phone"
-                placeholder="Your Phone Number"
-                required
-            >
-
-            <select id="loan">
-
-                <option value="">
-                    Select Requirement
-                </option>
-
-                <option>
-                    Business Loan
-                </option>
-
-                <option>
-                    Working Capital
-                </option>
-
-                <option>
-                    Business Expansion
-                </option>
-
-                <option>
-                    Other
-                </option>
-
-            </select>
-
-            <textarea
-                id="message"
-                placeholder="Tell us briefly about your requirement..."
-            ></textarea>
-
-            <button type="submit">
-                Submit Enquiry
-            </button>
-
-        </form>
 
     </div>
 
